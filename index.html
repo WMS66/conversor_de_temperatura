@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Conversor de Temperatura</title>
+        <link rel="stylesheet" href="index.css" />
+    </head>
+    <body>
+        <div class="container">
+            <div class="box-container">
+                <form action="">
+                    <div class="tmp_calculator_inputs">
+                        <h1 class="title">Conversor de temperatura</h1>
+                        <fieldset class="calculator_value">
+                            <legend>Graus</legend>
+                            <input type="number" id="input_value" name="value" />
+
+                            <select name="input" id="input">
+                                <option value="celsius">Celsius(&degC)</option>
+                                <option value="fahrenheit">Fahrenheit(&degF)</option>
+                                <option value="kelvin">Kelvin(&degK)</option>
+                            </select>
+                        </fieldset>
+                        <div class="calculator_input">
+                            <fieldset class="calculator_value">
+                                <legend>Converter Para</legend>
+
+                                <select name="output" id="output">
+                                    <option value="celsius">Celsius(&degC)</option>
+                                    <option value="fahrenheit">Fahrenheit(&degF)</option>
+                                    <option value="kelvin">Kelvin(&degK)</option>
+                                </select>
+                            </fieldset>
+                        </div>
+
+                        <div class="btn">
+                            <button type="button" id="convert" onclick="convertTemperature()">
+                                Converter
+                            </button>
+
+                            <button type="button" id="clean" onclick="reset ()">Limpar</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="result-area">
+                <h1 id="result"></h1>
+            </div>
+        </div>
+        <script src="index.js"></script>
+    </body>
+</html>
